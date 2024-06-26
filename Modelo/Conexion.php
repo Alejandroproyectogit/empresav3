@@ -2,7 +2,7 @@
 class Conexion
 {
     private $host = 'localhost';
-    private $db = 'inventarioest';
+    private $db = 'inventario_est';
     private $user = 'root';
     private $pass = '';
     private $dns;

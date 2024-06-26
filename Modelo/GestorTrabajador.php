@@ -32,7 +32,7 @@ class GestorTrabajador
 
         if($veriCorreo==false && $veriTele==false && $veriUsu==false){
             $sql = $enlaceConexion->prepare("INSERT INTO usuarios 
-            VALUES (NULL,:nombre,:correo,:telefono,:usuario,:contrasena,:cargo,:estado);"); 
+            VALUES (NULL,:nombre,:correo,:telefono,:usuario,:contrasena,:cargo,:estado,NULL);"); 
             
             $sql->bindParam(":nombre",$nombrec, PDO::PARAM_STR);
             $sql->bindParam(":correo",$correo, PDO::PARAM_STR);
